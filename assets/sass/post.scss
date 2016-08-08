@@ -1,0 +1,134 @@
+.content-area {
+	padding-top: 8em;
+}
+
+.post,
+.noticias,
+.artigos {
+	overflow: hidden;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid $gray;
+	@include my-border-radius(4px);
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.entry-header {
+		
+		.entry-title {
+			margin-top: 0;
+			
+			a {
+				color: $dark_blue;
+			}
+		}
+	}
+}
+
+.entry-header {
+	
+	.entry-title {
+		text-transform: uppercase;
+		color: $dark_blue;
+	}	
+}
+
+.container-post {
+	margin: 40px 0;
+}
+
+ul.post-information,
+ul.social-media-share {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 10px 10px 10px 0;
+	}
+}
+
+.entry-content {
+	margin: 20px 0;
+}
+
+ul.social-media-share {
+
+	a.facebook,
+	a.twitter,
+	a.linkedin,
+	a.google-plus,
+	a.whatsapp {
+		color: $secondary_color;
+		width: 42px;
+		height: 42px;
+		line-height: 36px;
+		text-align: center;
+		font-size: $font_size_18;
+		font-weight: 500;
+		display: block;
+		@include my-border-radius(4px);
+		@include my-transition(0.3s);
+		border-width: 3px;
+		border-style: solid;
+
+		&:hover {
+			text-decoration: none;
+			background: transparent;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+	
+	a.facebook {
+		background-color: $facebook_color;
+		border-color: $facebook_color;
+
+		&:hover {			
+			color: $facebook_color;
+		}
+	}
+
+	a.twitter {
+		background-color: $twitter_color;
+		border-color: $twitter_color;
+
+		&:hover {
+			color: $twitter_color;
+		}
+	}
+
+	a.linkedin {
+		background-color: $linkedin_color;
+		border-color: $linkedin_color;
+
+		&:hover {
+			color: $linkedin_color;
+		}
+	}
+
+	a.google-plus {
+		background-color: $google_plus_color;
+		border-color: $google_plus_color;
+
+		&:hover {
+			color: $google_plus_color;
+		}
+	}
+
+	a.whatsapp {
+		background-color: $whatsapp_color;
+		border-color: $whatsapp_color;
+		display: none;
+
+		&:hover {
+			color: $whatsapp_color;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+a:focus {
+	outline: none !important;
+}
+
+.container-section {
+	padding: 80px 0;
+
+	.section-space {
+		margin-top: 40px;
+	}
+
+	.section-title {
+		@include my-text-color(#1B374C);
+		font-weight: 700;
+		font-size: $font_size_60;
+		text-transform: uppercase;
+	}
+}
+
+a.alls {
+	font-size: $font_size_20;
+	color: $primary_color;
+	text-transform: uppercase;
+		
+	&:hover, &:focus {
+		color: $primary_color;
+		text-decoration: none;
+	}
+
+	.pointer {
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		vertical-align: middle;
+		@include my-background-color(#1B374C);
+		margin-right: 10px;
+	}
+}
+
+img.align-center {
+	clear: both;
+	margin: 0 auto;
+}

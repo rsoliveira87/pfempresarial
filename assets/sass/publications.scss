@@ -1,0 +1,49 @@
+.search-publications {
+	margin-top: 35px;
+}
+
+.publications-tabs {
+
+	.nav-tabs > li > a {
+		font-size: $font_size_18;
+		text-transform: uppercase;
+	}
+}
+
+.article {
+	margin: 2em 0;
+	display: block;
+
+	.article-month {
+		background: $dark_blue;
+		color: $secondary_color;
+		display: block;
+		height: 70px;
+		line-height: 70px;
+		text-align: center;
+		font-size: $font_size_22;
+		text-transform: uppercase;
+	}
+
+	.article-title {
+		color: $dark_blue;
+		text-transform: uppercase;
+		margin-top: 0;
+		font-size: $font_size_18;
+	}
+
+	.article-date {
+		color: $dark_blue;
+	}
+}
+
+.form-newsletter {
+	margin: 2em 0;
+	display: block;
+
+	h4 {
+		text-transform: uppercase;
+		color: $dark_blue;
+		font-weight: 500;
+	}
+}

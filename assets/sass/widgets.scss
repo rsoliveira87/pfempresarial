@@ -1,0 +1,99 @@
+#sidebar-right {
+	padding-top: 8em;
+
+	.widget {
+		margin-bottom: 30px;
+		@include my-border-radius(4px);
+		background-color: $gray;
+		
+		ul {
+			padding: 10px;
+
+			li {
+				line-height: 24px;
+				list-style: none;
+
+				&:before {
+					content: "\f00c";
+					font-family: "FontAwesome";
+					margin-right: 6px;
+				}
+			}
+		}
+
+		form,
+		img,
+		.tagcloud {
+			padding: 10px;
+		}
+	}
+
+	.widget-title {
+		text-transform: uppercase;
+		font-weight: 500;
+		color: $secondary_color;
+		background-color: $dark_blue;
+		padding: 10px;
+		@include my-border-radius-2(4px, 4px, 0, 0);
+	}
+
+	.widget_recent_comments {
+
+		.widget-title {
+
+			&:before {
+				font-family: "FontAwesome";
+				content: "\f075";
+				margin-right: 6px;
+			}
+		}
+	}
+
+	.widget_search {
+
+		.widget-title {
+
+			&:before {
+				font-family: "FontAwesome";
+				content: "\f002";
+				margin-right: 6px;
+			}
+		}
+	}
+
+	.widget_archive {
+
+		.widget-title {
+
+			&:before {
+				font-family: "FontAwesome";
+				content: "\f07c";
+				margin-right: 6px;
+			}
+		}
+	}
+
+	.widget_tag_cloud {
+		
+		.widget-title {
+
+			&:before {
+				font-family: "FontAwesome";
+				content: "\f02c";
+				margin-right: 6px;
+			}
+		}
+	}
+
+	.widget_categories {
+
+		.widget-title {
+
+			&:before {
+				font-family: "FontAwesome";
+				content: "\f03a";
+				margin-right: 6px;
+			}
+		}
+	}
+}

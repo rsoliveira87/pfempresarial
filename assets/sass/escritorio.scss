@@ -1,0 +1,28 @@
+.container-section {
+
+	&.gray {
+		@include my-background-color(#E6E7E8);
+	}
+
+	a.recognition {
+		font-size: $font_size_20;
+		color: $primary_color;
+		text-transform: uppercase;
+			
+		&:hover, &:focus {
+			color: $primary_color;
+			text-decoration: none;
+		}
+	}
+}
+
+.presentation {
+	border-left: 20px solid $dark_blue;
+	padding: 0 40px;
+
+	.presentation-title {
+		color: $dark_blue;
+    	font-weight: 600;
+    	text-transform: uppercase;
+	}
+}

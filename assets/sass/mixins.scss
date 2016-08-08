@@ -1,0 +1,59 @@
+@mixin my-transition($time) {
+	transition: $time all ease-in-out;
+	-webkit-transition: $time all ease-in-out;
+	-moz-transition: $time all ease-in-out;
+	-o-transition: $time all ease-in-out;
+	-ms-transition: $time all ease-in-out;
+}
+
+@mixin my-border-radius($pixels) {
+	border-radius: $pixels;
+	-webkit-border-radius: $pixels;
+	-moz-border-radius: $pixels;
+	-o-border-radius: $pixels;
+	-ms-border-radius: $pixels;
+}
+
+@mixin my-border-radius-2($top_left, $top_right, $bottom_right, $bottom_left) {
+	border-radius: $top_left $top_right $bottom_right $bottom_left;
+	-webkit-border-radius: $top_left $top_right $bottom_right $bottom_left;
+	-moz-border-radius: $top_left $top_right $bottom_right $bottom_left;
+	-o-border-radius: $top_left $top_right $bottom_right $bottom_left;
+	-ms-border-radius: $top_left $top_right $bottom_right $bottom_left;
+}
+
+@mixin my-button($background, $width, $font_size) {
+	background: $background;
+	color: #fff;
+	width: $width;
+	font-size: $font_size;
+	font-weight: 400;
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	border: none;
+}
+
+@mixin my-text-color($color) {
+	color: $color;
+}
+
+@mixin my-background-color($background) {
+	background: $background;
+}
+
+@mixin my-transform($type-tranform) {
+	transform: $type-tranform;
+	-webkit-transform: $type-tranform;
+	-moz-transform: $type-tranform;
+	-o-transform: $type-tranform;
+	-ms-transform: $type-tranform;
+}
+
+@mixin my-box-shadow($first, $secondy, $third, $color) {
+	box-shadow: $first $secondy $third $color;
+	-moz-box-shadow: $first $secondy $third $color;
+	-webkit-box-shadow: $first $secondy $third $color;
+	-o-box-shadow: $first $secondy $third $color;
+	-ms-box-shadow: $first $secondy $third $color;
+}

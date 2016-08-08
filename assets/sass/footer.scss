@@ -1,0 +1,70 @@
+.footer {
+	background: $dark_blue;
+	padding: 80px 0;
+	margin-top: 20px;
+
+	.widget-title {
+		color: $orange;
+		text-transform: uppercase;
+		font-size: $font_size_14;
+		font-weight: 600;
+	}
+	
+	.widget{
+		ul {
+			margin-left: 15px;
+			padding: 0;
+
+			li {
+				color: $orange;
+				margin-bottom: 10px;
+
+				a {
+					color: $secondary_color;
+
+					&:hover, &:focus {
+						color: $orange;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.copyright {
+	background: #019ADD;
+	padding: 10px 0;
+	color: $secondary_color;
+	font-size: $font_size_16;
+
+	a, a:hover, a:focus {
+		color: $orange;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+
+.back-to-top {
+	@include my-background-color(rgba(0, 0, 0, 0.6));
+	@include my-border-radius(4px);
+	@include my-transition(0.3s);
+	border: 2px solid $secondary_color;
+	bottom: 40px;
+	color: $secondary_color;
+	font-size: $font_size_24;
+	padding: 5px 10px;
+	position: fixed;
+	right: 5px;
+	text-align: center;
+	display: none;
+
+	&:hover {
+		background: $dark_blue;
+		color: $secondary_color;
+	}
+
+	&:focus {
+		color: $secondary_color;
+	}
+}

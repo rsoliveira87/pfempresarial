@@ -1,0 +1,56 @@
+.activities-areas {
+
+	ul.activities-list-areas {
+		margin: 40px 0 0;
+		padding: 0;
+		
+		li {
+			list-style: none;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: $font_size_16;
+			margin-bottom: 10px;
+
+			a {
+				color: $dark_blue;
+
+				&:hover, &:focus {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.activities-box {
+	background: $secondary_color;
+	margin-bottom: 20px;
+	@include my-border-radius(4px);
+	@include my-box-shadow(0, 1px, 1px, $box_shadow_1);
+
+	.activities-box-heading {
+		background: $dark_blue;
+		padding: 10px 15px;
+		@include my-border-radius-2(4px, 4px, 0, 0);
+	}
+
+	.activities-box-body {
+		padding: 15px;
+	}
+
+	.activities-box-footer {
+		background: $dark_blue;
+		padding: 10px 15px;
+		@include my-border-radius-2(0, 0, 4px, 4px);
+
+		p {
+			color: $secondary_color;
+		}
+	}
+
+	h4 {
+		color: $secondary_color;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+}

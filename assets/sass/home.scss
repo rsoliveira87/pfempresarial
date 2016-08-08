@@ -1,0 +1,78 @@
+.header-wrapper {
+	/*background-image: url('assets/img/home/coaching-corporativo.jpg');*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 800px;
+
+	.homepage {
+		padding-top: 15em;
+		color: $secondary_color;
+
+		h1, h2, h3 {
+			color: $secondary_color;
+		}
+
+		h1.homepage-text1 {
+			font-size: $font_size_48;
+			font-weight: 600;
+		}
+
+		h2.homepage-text2 {
+			font-size: $font_size_36;
+			font-weight: 500;
+		}
+
+		a.homepage-button {
+			@include my-button(#ff6600, 50%, 22px);
+			@include my-border-radius(4px);
+			@include my-transition(0.3s);
+
+			&:hover {
+				background: $dark_blue;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.homepage-form {
+		padding-top: 12em;
+
+		form {
+			background: $background_homepage_form;
+			border: 1px solid $background_homepage_form_border;
+			padding: 30px;
+			width: 60%;
+			margin: 0 auto;
+			@include my-border-radius(10px);
+
+			label, .wpcf7-list-item-label {
+				color: $secondary_color;
+			}
+
+			input[type="submit"] {
+				@include my-button(#ff6600, auto, 22px);
+				@include my-border-radius(4px);
+				@include my-transition(0.3s);
+
+				&:hover {
+					background: $dark_blue;
+				}
+			}
+
+			input[type="checkbox"] {
+				vertical-align: top;
+				margin-right: 5px;
+			}
+
+			.wpcf7-list-item {
+				display: block;
+			}
+		}
+	}
+}
+
+.required {
+	color: $form_required;
+}

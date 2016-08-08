@@ -1,0 +1,85 @@
+.testimonials {
+	overflow: hidden;
+	padding: 20px;
+	height: 350px;
+
+	.testimonial-author-photo {
+		display: block;
+
+		img {
+			margin: 0 auto;
+			clear: both;
+			@include my-border-radius(50%);
+		}
+	}
+
+	.testimonial-author-name {
+
+		h4 {
+			text-transform: uppercase;
+			color: $dark_blue;
+			margin: 20px 0 10px;
+			font-weight: 600;
+			font-size: $font_size_24;
+		}
+
+		.company-name {
+			text-transform: uppercase;
+			font-size: $font_size_16;
+			color: $primary_color;
+
+			a {
+				color: $orange;
+			}
+		}
+	}
+
+	.testimonial-content {
+		padding: 20px;
+		background: $dark_blue;
+		@include my-border-radius(4px);
+		@include my-box-shadow(0, 6px, 12px, rgba(0, 0, 0, 0.176));
+
+		p {
+			color: $secondary_color;
+			font-size: $font_size_18;
+			font-weight: 500;
+			font-style: italic;
+		}
+
+		a.more-link {
+			color: $orange;
+		}
+
+		i.fa {
+			font-size: $font_size_36;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50px;
+			left: -12px;
+			border-top: 30px solid transparent;
+  			border-bottom: 30px solid transparent; 
+  			border-right: 30px solid $dark_blue;
+		}
+	}
+
+	.carousel-control {
+		top: 4em;
+		width: 2%;
+		font-size: $font_size_36;
+
+		&.left, &.right {
+			background-image: none;
+		}
+	}
+}
+
+.container-post {
+
+	.testimonials {
+		height: auto;
+	}
+}

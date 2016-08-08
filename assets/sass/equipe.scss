@@ -1,0 +1,101 @@
+.team-tabs {
+
+	.nav-tabs > li > a {
+		font-size: $font_size_18;
+		text-transform: uppercase;
+	}
+}
+
+.team-content {
+	margin: 2em 0;
+	display: block;
+	@include my-transition(0.3s);
+
+	&:hover {
+
+		.team-name {
+			background: $orange;
+		}
+
+		.team-more-info a {
+			background: $orange;
+		}
+	}
+
+	.team-photo {
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			display: block;
+			@include my-transform(scale(1, 1));
+			@include my-transition(250ms);
+
+			&:hover {
+				@include my-transform(scale(1.05, 1.07));
+			}
+		}
+	}
+
+	.team-name {
+		text-transform: uppercase;
+		display: block;		
+		background: $dark_blue;
+		padding: 10px 15px;
+		@include my-transition(0.3s);
+
+		h3 {
+			font-size: $font_size_14;
+			color: $secondary_color;
+			font-weight: 600;
+		}
+	}
+
+	.team-more-info {
+		margin-top: 2px;
+
+		a {
+			color: $secondary_color;
+			background: $dark_blue;
+			display: block;
+			padding: 10px;			
+			@include my-transition(0.3s);
+		}
+	}
+}
+
+.team-info {
+
+	h2 {
+		color: $dark_blue;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	h4 {
+		text-transform: uppercase;
+		font-weight: 600;
+		color: $dark_blue;
+	}
+
+	ul {
+		margin-left: 15px;
+		padding: 0;
+	}
+
+	.presentation {
+		border-left: 6px solid $dark_blue;
+		padding: 5px 20px;
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+				margin-bottom: 10px;
+				font-size: $font_size_16;
+			}
+		}
+	}
+}
